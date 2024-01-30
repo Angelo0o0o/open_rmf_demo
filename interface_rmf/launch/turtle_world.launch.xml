@@ -1,0 +1,38 @@
+<?xml version='1.0' ?>
+
+<launch>
+  <arg name="use_sim_time" default="true"/>
+
+  <!-- Common launch -->
+  <include file="$(find-pkg-share rmf_demos)/common.launch.xml">
+    <arg name="use_sim_time" value="$(var use_sim_time)"/>
+    <arg name="viz_config_file" value ="$(find-pkg-share rmf_demos)/include/office/office.rviz"/>
+    <arg name="config_file" value="$(find-pkg-share interface_rmf)/test/test_map.building.yaml"/>
+    <!-- <arg name="dashboard_config_file" value="$(find-pkg-share rmf_demos_dashboard_resources)/test/dashboard_config.json"/> -->
+  </include>
+
+  <!-- turtlebot3 fleet adapter -->
+  <!-- <group>
+    <include file="$(find-pkg-share rmf_demos_fleet_adapter)/launch/fleet_adapter.launch.xml">
+      <arg name="use_sim_time" value="$(var use_sim_time)"/>
+      <arg name="nav_graph_file" value="$(find-pkg-share rmf_demos_maps)/maps/turtle_world/nav_graphs/0.yaml" />
+      <arg name="config_file" value="$(find-pkg-share rmf_demos)/config/turtle/turtle_config.yaml"/>
+    </include>
+  </group> -->
+
+  <group>
+    <include file="$(find-pkg-share interface_rmf)/adapters/turtlebot3_adapter.launch.xml">
+      <arg name="fleet_name" value="burger"/>
+      <arg name="use_sim_time" value="$(var use_sim_time)"/>
+      <arg name="nav_graph_file" value="$(find-pkg-share interface_rmf)/maps/test_map/nav_graphs/2.yaml" />
+    </include>
+  </group>
+
+  <group>
+    <include file="$(find-pkg-share interface_rmf)/adapters/turtlebot3_adapter.launch.xml">
+      <arg name="fleet_name" value="waffle"/>
+      <arg name="use_sim_time" value="$(var use_sim_time)"/>
+      <arg name="nav_graph_file" value="$(find-pkg-share interface_rmf)/maps/test_map/nav_graphs/2.yaml" />
+    </include>
+  </group>
+</launch>

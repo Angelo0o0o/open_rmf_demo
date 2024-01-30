@@ -1,0 +1,103 @@
+coordinate_system: reference_image
+crowd_sim:
+  agent_groups:
+    - {agents_name: [], agents_number: 0, group_id: 0, profile_selector: external_agent, state_selector: external_static, x: 0, y: 0}
+  agent_profiles:
+    - {ORCA_tau: 1, ORCA_tauObst: 0.40000000000000002, class: 1, max_accel: 0, max_angle_vel: 0, max_neighbors: 10, max_speed: 0, name: external_agent, neighbor_dist: 5, obstacle_set: 1, pref_speed: 0, r: 0.25}
+  enable: 0
+  goal_sets: []
+  model_types: []
+  obstacle_set: {class: 1, file_name: L1_navmesh.nav, type: nav_mesh}
+  states:
+    - {final: 1, goal_set: -1, name: external_static, navmesh_file_name: ""}
+  transitions: []
+  update_time_step: 0.10000000000000001
+graphs:
+  {}
+levels:
+  L1:
+    drawing:
+      filename: Prueba_3.png
+    elevation: 0
+    floors:
+      - parameters: {ceiling_scale: [3, 1], ceiling_texture: [1, blue_linoleum], indoor: [2, 0], texture_name: [1, blue_linoleum], texture_rotation: [3, 0], texture_scale: [3, 1]}
+        vertices: [4, 5, 6, 7]
+      - parameters: {ceiling_scale: [3, 1], ceiling_texture: [1, blue_linoleum], indoor: [2, 0], texture_name: [1, blue_linoleum], texture_rotation: [3, 0], texture_scale: [3, 1]}
+        vertices: [8, 9, 11, 10]
+      - parameters: {ceiling_scale: [3, 1], ceiling_texture: [1, blue_linoleum], indoor: [2, 0], texture_name: [1, blue_linoleum], texture_rotation: [3, 0], texture_scale: [3, 1]}
+        vertices: [13, 14, 16, 15]
+      - parameters: {ceiling_scale: [3, 1], ceiling_texture: [1, blue_linoleum], indoor: [2, 0], texture_name: [1, blue_linoleum], texture_rotation: [3, 0], texture_scale: [3, 1]}
+        vertices: [28, 29, 31, 30]
+    lanes:
+      - [18, 19, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [19, 20, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [20, 21, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [21, 3, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], orientation: [1, backward], speed_limit: [3, 0]}]
+      - [22, 23, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [23, 24, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [24, 25, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [25, 12, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], orientation: [1, backward], speed_limit: [3, 0]}]
+      - [22, 3, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], orientation: [1, backward], speed_limit: [3, 0]}]
+      - [17, 18, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], orientation: [1, forward], speed_limit: [3, 0]}]
+      - [19, 26, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [24, 27, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 1], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [32, 33, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 8], orientation: [1, forward], speed_limit: [3, 0]}]
+      - [33, 34, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 8], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [34, 35, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 8], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [35, 36, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 8], orientation: [1, ""], speed_limit: [3, 0]}]
+      - [36, 3, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 8], orientation: [1, backward], speed_limit: [3, 0]}]
+      - [34, 37, {bidirectional: [4, true], demo_mock_floor_name: [1, ""], demo_mock_lift_name: [1, ""], graph_idx: [2, 8], orientation: [1, ""], speed_limit: [3, 0]}]
+    layers:
+      scan:
+        color: [1, 0, 0, 0.5]
+        filename: Prueba_3.png
+        transform:
+          scale: 0.050000000000000003
+          translation_x: 0
+          translation_y: 0
+          yaw: 0
+        visible: true
+    measurements:
+      - [0, 1, {distance: [3, 1]}]
+      - [0, 2, {distance: [3, 1]}]
+    vertices:
+      - [0, 0, 0, ""]
+      - [20, 0, 0, ""]
+      - [0, 20, 0, ""]
+      - [530, 240, 0, Pick/Drop, {dropoff_ingestor: [1, cosas_ingestor_0], is_holding_point: [4, true], is_parking_spot: [4, false], pickup_dispenser: [1, cosas_dispenser]}]
+      - [510, 220, 0, ""]
+      - [550, 220, 0, ""]
+      - [550, 260, 0, ""]
+      - [510, 260, 0, ""]
+      - [580, 40, 0, ""]
+      - [620, 40, 0, ""]
+      - [580, 120, 0, ""]
+      - [620, 120, 0, ""]
+      - [600, 80, 0, Pick_1, {is_holding_point: [4, true], is_parking_spot: [4, false], pickup_dispenser: [1, cosa_dispenser_1]}]
+      - [570, 420, 0, ""]
+      - [610, 420, 0, ""]
+      - [570, 500, 0, ""]
+      - [610, 500, 0, ""]
+      - [590, 460, 0, Pick_2, {is_holding_point: [4, true], is_parking_spot: [4, false], pickup_dispenser: [1, cosa_dispenser_2]}]
+      - [565, 460, 0, ""]
+      - [510, 460, 0, ""]
+      - [510, 280, 0, ""]
+      - [530, 280, 0, ""]
+      - [555, 240, 0, ""]
+      - [666, 240, 0, ""]
+      - [666, 80, 0, ""]
+      - [630, 80, 0, ""]
+      - [460, 460, 0, spawn_tb2, {is_charger: [4, true], is_parking_spot: [4, true]}]
+      - [730, 80, 0, spawn_tb1, {is_charger: [4, true], is_parking_spot: [4, true]}]
+      - [80, 140, 0, ""]
+      - [160, 140, 0, ""]
+      - [80, 280, 0, ""]
+      - [160, 280, 0, ""]
+      - [120, 210, 0, Drop, {dropoff_ingestor: [1, cosas_ingestor], is_holding_point: [4, true], is_parking_spot: [4, false]}]
+      - [180, 210, 0, ""]
+      - [180, 220, 0, ""]
+      - [485, 220, 0, ""]
+      - [485, 240, 0, ""]
+      - [179.65199999999999, 315.71800000000002, 0, spawn_tw1, {is_charger: [4, true], is_parking_spot: [4, true]}]
+lifts: {}
+name: Prueba_3
