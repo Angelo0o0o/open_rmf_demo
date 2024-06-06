@@ -23,7 +23,7 @@
     <include file="$(find-pkg-share interface_rmf)/adapters/turtlebot3_waffle_adapter.launch.xml">
       <arg name="fleet_name" value="waffle"/>
       <arg name="use_sim_time" value="$(var use_sim_time)"/>
-      <arg name="nav_graph_file" value="$(find-pkg-share interface_rmf)/maps/Prueba_1_connect/nav_graphs/0.yaml" />
+      <arg name="nav_graph_file" value="$(find-pkg-share interface_rmf)/Prueba_1_connect/nav_graphs/0.yaml" />
     </include>
   </group>
 
