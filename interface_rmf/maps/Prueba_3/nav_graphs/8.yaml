@@ -1,0 +1,64 @@
+building_name: Prueba_3
+levels:
+  L1:
+    lanes:
+    - - 0
+      - 1
+      - {orientation_constraint: forward, speed_limit: 0}
+    - - 1
+      - 0
+      - {orientation_constraint: backward, speed_limit: 0}
+    - - 1
+      - 2
+      - {speed_limit: 0}
+    - - 2
+      - 1
+      - {speed_limit: 0}
+    - - 2
+      - 3
+      - {speed_limit: 0}
+    - - 3
+      - 2
+      - {speed_limit: 0}
+    - - 3
+      - 4
+      - {speed_limit: 0}
+    - - 4
+      - 3
+      - {speed_limit: 0}
+    - - 4
+      - 5
+      - {orientation_constraint: backward, speed_limit: 0}
+    - - 5
+      - 4
+      - {orientation_constraint: forward, speed_limit: 0}
+    - - 2
+      - 6
+      - {speed_limit: 0}
+    - - 6
+      - 2
+      - {speed_limit: 0}
+    vertices:
+    - - 6.0
+      - -10.5
+      - {dropoff_ingestor: cosas_ingestor, is_holding_point: true, is_parking_spot: false,
+        name: Drop}
+    - - 9.0
+      - -10.5
+      - {name: ''}
+    - - 9.0
+      - -11.0
+      - {name: ''}
+    - - 24.25
+      - -11.0
+      - {name: ''}
+    - - 24.25
+      - -12.0
+      - {name: ''}
+    - - 26.5
+      - -12.0
+      - {dropoff_ingestor: cosas_ingestor_0, is_holding_point: true, is_parking_spot: false,
+        name: Pick/Drop, pickup_dispenser: cosas_dispenser}
+    - - 8.9826
+      - -15.785900000000002
+      - {is_charger: true, is_parking_spot: true, name: spawn_tw1}
